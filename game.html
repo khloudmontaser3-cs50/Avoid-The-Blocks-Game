@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Avoid the Blocks</title>
+  <link rel="stylesheet" href="{% static 'game_app/style.css' %}">
+  <script src="{%static 'game_app/script.js'%}"></script>
+</head>
+<body>
+  <h1>🟦 اهرب من المكعبات 🟥</h1>
+  <p>استخدم الأسهم ← و → للتحريك</p>
+  <p>السكور: <span id="score">0</span></p>
+
+  <div id="game-area">
+    <div id="player"></div>
+  </div>
+
+  <script src="{% static 'game_app/script.js' %}"></script>
+</body>
+</html>
